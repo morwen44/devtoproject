@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DEV Commnuity</title>
+    <title>DEV Community</title>
+    <!--Esto sirve para cambiar el ícono de pestaña o favicon-->
     <link
       rel="icon"
       href="https://res.cloudinary.com/practicaldev/image/fetch/s--E8ak4Hr1--/c_limit,f_auto,fl_progressive,q_auto,w_32/https://dev-to.s3.us-east-2.amazonaws.com/favicon.ico"
@@ -18,8 +19,9 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body class="bg-fondo vw-100 justify-content-center">
+    <!---->
     <header class="bg-white m-0">
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg d-flex border-bottom">
         <div class="container-fuid w-100">
           <div
             class="d-flex justify-content-start justify-content-md-between ps-2"
@@ -300,8 +302,10 @@
             </div>
             <!--sidebar-->
 
-            <div class="border col-7 d-none d-md-block ms-2">
-              <button class="btn btn-light bg-transparent">
+            <div
+              class="border rounded d-none d-md-block ms-2 w-50 d-flex flex-nowrap align-items-center"
+            >
+              <button class="btn btn-ghost-morado">
                 <svg class="" width="24" height="24">
                   <path
                     d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0111 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 01-1.969 5.617zm-2.006-.742A6.977 6.977 0 0018 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 004.875-1.975l.15-.15z"
@@ -309,11 +313,10 @@
                 </svg>
               </button>
               <input
-                class="position-relative no-border w-50 h-100 border-0"
+                class="position-relative no-border w-50 border-0"
                 type="text"
                 placeholder="Search..."
               />
-              Powered by Algolia
             </div>
             <div
               class="ms-auto me-3 d-flex justify-content-end align-items-center gap-3"
@@ -346,6 +349,7 @@
                 height="30"
               />
             </div>
+            <div class="d-none d-md-block col-1"></div>
           </div>
         </div>
       </nav>
@@ -355,7 +359,7 @@
     <div class="container mt-4">
       <div class="row">
         <!-- Gerardo Cespedes Martinez -->
-        <div class="d-none d-md-block col-md-4 col-lg-2 flex-column mt-2 p-0">
+        <div class="d-none d-md-block col-md-4 col-lg-3 flex-column p-0">
           <nav id="DevCommunity">
             <ul class="nav flex-column">
               <li class="nav-item">
@@ -483,7 +487,7 @@
             </ul>
           </nav>
           <nav class="mt-3" id="Other">
-            <h6 class="ms-2 fs-5 fw-bold">Other</h6>
+            <h6 class="ms-2 fs-6 fw-bold">Other</h6>
             <ul class="nav flex-column">
               <li class="nav-item">
                 <a
@@ -515,27 +519,27 @@
             </ul>
           </nav>
           <nav class="d-flex justify-content-around mt-4 mb-4" id="Socials">
-            <a href="" class="btn btn-ghost-morado px-2 py-2"
+            <a href="" class="btn btn-ghost-morado p-2"
               ><img src="img/twiter.svg" alt=""
             /></a>
-            <a href="" class="btn btn-ghost-morado px-2 py-2"
+            <a href="" class="btn btn-ghost-morado p-2"
               ><img src="img/facebook.svg" alt=""
             /></a>
-            <a href="" class="btn btn-ghost-morado px-2 py-2"
+            <a href="" class="btn btn-ghost-morado p-2"
               ><img src="img/github.svg" alt=""
             /></a>
-            <a href="" class="btn btn-ghost-morado px-2 py-2"
+            <a href="" class="btn btn-ghost-morado p-2"
               ><img src="img/insta.svg" alt=""
             /></a>
-            <a href="" class="btn btn-ghost-morado px-2 py-2"
+            <a href="" class="btn btn-ghost-morado p-2"
               ><img src="img/twitch.svg" alt=""
             /></a>
-            <a href="" class="btn btn-ghost-morado px-2 py-2"
+            <a href="" class="btn btn-ghost-morado p-2"
               ><img src="img/mastodon.svg" alt=""
             /></a>
           </nav>
           <header class="d-flex align-items-center justify-content-between">
-            <h6>My Tags</h6>
+            <h6 class="fw-bold ms-2 mt-2">My Tags</h6>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewbox="0 0"
@@ -630,7 +634,7 @@
           </div>
         </div>
         <!-- Valeria -->
-        <div class="col-12 col-md-8 col-lg-7 d-flex flex-column gap-2">
+        <div class="col-12 col-md-8 col-lg-6 d-flex flex-column gap-2">
           <ul class="nav nav-underline">
             <li class="nav-item">
               <a
@@ -665,13 +669,13 @@
                 />
                 <div class="d-flex flex-column justify-content-center">
                   <a
-                    class="btn btn-ghost text-dark text-start px-1 py-1 fs-m"
+                    class="btn btn-ghost text-dark text-start p-1 fs-m"
                     href=""
                   >
                     Miguel
                   </a>
                   <p
-                    class="fw-light fs-sm mt-0 ms-1 text-light-emphasis link-dark"
+                    class="fw-light fs-sm ms-1 text-light-emphasis link-dark fecha"
                   >
                     May 25 (12 hours ago)
                   </p>
@@ -691,7 +695,7 @@
                   <a class="p-1 btn btn-border fs-m">#react</a>
                   <a class="p-1 btn btn-border fs-m"> #javascript </a>
                 </div>
-                <div class="reactions my-4 d-flex">
+                <div class="reactions mb-3 d-flex">
                   <a class="btn btn-ghost fs-reactions">
                     <span class="bg-dark-subtle rounded-circle border"
                       >&#129299;</span
@@ -791,7 +795,7 @@
                     Miguel
                   </a>
                   <p
-                    class="fw-light fs-sm mt-0 ms-1 text-light-emphasis link-dark"
+                    class="fw-light fs-sm ms-1 text-light-emphasis link-dark fecha"
                   >
                     May 25 (12 hours ago)
                   </p>
@@ -811,7 +815,7 @@
                   <a class="p-1 btn btn-border fs-m">#react</a>
                   <a class="p-1 btn btn-border fs-m"> #javascript </a>
                 </div>
-                <div class="reactions my-4 d-flex">
+                <div class="reactions mb-3 d-flex">
                   <a class="btn btn-ghost fs-reactions">
                     <span class="bg-dark-subtle rounded-circle border"
                       >&#129299;</span
@@ -911,7 +915,7 @@
                     Miguel
                   </a>
                   <p
-                    class="fw-light fs-sm mt-0 ms-1 text-light-emphasis link-dark"
+                    class="fw-light fs-sm ms-1 text-light-emphasis link-dark fecha"
                   >
                     May 25 (12 hours ago)
                   </p>
@@ -931,7 +935,7 @@
                   <a class="p-1 btn btn-border fs-m">#react</a>
                   <a class="p-1 btn btn-border fs-m"> #javascript </a>
                 </div>
-                <div class="reactions my-4 d-flex">
+                <div class="reactions mb-3 d-flex">
                   <a class="btn btn-ghost fs-reactions">
                     <span class="bg-dark-subtle rounded-circle border"
                       >&#129299;</span
@@ -1031,7 +1035,7 @@
                     Miguel
                   </a>
                   <p
-                    class="fw-light fs-sm mt-0 ms-1 text-light-emphasis link-dark"
+                    class="fw-light fs-sm ms-1 text-light-emphasis link-dark fecha"
                   >
                     May 25 (12 hours ago)
                   </p>
@@ -1051,7 +1055,7 @@
                   <a class="p-1 btn btn-border fs-m">#react</a>
                   <a class="p-1 btn btn-border fs-m"> #javascript </a>
                 </div>
-                <div class="reactions my-4 d-flex">
+                <div class="reactions mb-3 d-flex">
                   <a class="btn btn-ghost fs-reactions">
                     <span class="bg-dark-subtle rounded-circle border"
                       >&#129299;</span
@@ -1151,7 +1155,7 @@
                     Miguel
                   </a>
                   <p
-                    class="fw-light fs-sm mt-0 ms-1 text-light-emphasis link-dark"
+                    class="fw-light fs-sm ms-1 text-light-emphasis link-dark fecha"
                   >
                     May 25 (12 hours ago)
                   </p>
@@ -1171,7 +1175,7 @@
                   <a class="p-1 btn btn-border fs-m">#react</a>
                   <a class="p-1 btn btn-border fs-m"> #javascript </a>
                 </div>
-                <div class="reactions my-4 d-flex">
+                <div class="reactions mb-3 d-flex">
                   <a class="btn btn-ghost fs-reactions">
                     <span class="bg-dark-subtle rounded-circle border"
                       >&#129299;</span
@@ -1248,7 +1252,6 @@
               </div>
             </div>
           </div>
-          
         </div>
 
         <!-- Fin Valeria-->
@@ -1258,7 +1261,7 @@
           <!-- Tarjeta de Discusiones Activas -->
           <div class="card mb-3 border-light-subtle">
             <div
-              class="card-header fw-bold fs-4 bg-transparent border-light-subtle"
+              class="card-header fw-bold fs-5 bg-transparent border-light-subtle"
             >
               Active discussions
             </div>
@@ -1322,7 +1325,7 @@
               class="card-header d-flex flex-column bg-transparent border-light-subtle"
             >
               <span class="fs-5 fw-bold">#discuss</span>
-              <span class="fs-6"
+              <span class="fs-sm text-light-emphasis"
                 >Discussion threads targeting the whole community</span
               >
             </div>
@@ -1387,7 +1390,9 @@
               class="card-header d-flex flex-column bg-transparent border-light-subtle"
             >
               <span class="fs-5 fw-bold">#watercooler</span>
-              <span class="fs-6">Light and off-topic conversation</span>
+              <span class="fs-sm text-light-emphasis"
+                >Light and off-topic conversation</span
+              >
             </div>
 
             <ul class="list-group list-group-flush">
